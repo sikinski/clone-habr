@@ -1,0 +1,89 @@
+$fullsz: 100%;
+$mainCol: #1a1b1b;
+$textCol: #4c7bbf;
+$greenCol: #62b13d;
+$lineZPCol: #6b57f5;
+$footerCol: #2b3135;
+
+header {
+  background-color: $mainCol;
+  width: $fullsz;
+  height: 48px;
+
+  .header__content {
+    display: flex;
+    height: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    a {
+      img {
+        height: 100%;
+      }
+    }
+    & button {
+      color: white;
+    }
+    .block-for-popup {
+      .header__open-popup-btn {
+        border-left: 1px solid rgba(256, 256, 256, 0.3);
+        & i {
+          font-size: 14px;
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .header__become-author-btn {
+      border: 1px solid rgba(256, 256, 256, 0.3);
+      border-radius: 4%;
+      &:hover {
+        border: 1px solid rgba(256, 256, 256, 0.6);
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+        transition: ease-in 0.3s;
+      }
+    }
+  }
+  .header__services-popup {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    margin-left: -80px;
+    margin-top: 12px;
+    background-color: white;
+    z-index: 6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .popup__header {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      p {
+        padding: 0 20px;
+      }
+    }
+    .popup__services {
+      padding: 12px 0;
+      .service {
+        padding: 3px 0;
+        height: 63px;
+        &:hover {
+          background-color: darken(white, 8%);
+        }
+        h2 {
+          font-family: "PyperFonts";
+          font: "Rubik-VariableFont";
+          font-weight: normal;
+          padding: 0 20px;
+        }
+        p {
+          padding: 0 20px;
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          opacity: 0.5;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+}

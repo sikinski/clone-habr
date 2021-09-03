@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/normalize.css">
+    <link rel="stylesheet" href="/src/header.css">
+    <link rel="stylesheet" href="/src/nav.css">
+
+    <title>Лучшие публикации за сутки / Habr</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <a href="#"><img src="/src/img/logo.gif" alt=""></a>
+            <div class="block-for-popup">
+            <button class="header__open-popup-btn"><i class="fas fa-chevron-down"></i></button>
+
+            <div class="header__services-popup hidden">
+                <div class="popup__header"><p>All habr services</p></div>
+                <div class="popup__services">
+                    <div class="service">
+                        <h2>Habr</h2>
+                        <p>Community of IT professionals</p>
+                    </div>
+                    <div class="service">
+                        <h2>Q&A</h2>
+                        <p>Answers to any questions about IT</p>
+                    </div>
+                    <div class="service">
+                        <h2>Career</h2>
+                        <p>Professional development in IT</p>
+                    </div>
+                    <div class="service">
+                        <h2>Freelance</h2>
+                        <p>Remote work for IT-specialists</p>
+                    </div>
+                </div>
+
+        </div>
+            <button class="header__become-author-btn">how to become an author</button>
+        </div>
+
+        
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav__content">
+            <ul>
+                <li>All streams</li>
+                <li>Development</li>
+                <li>Administration</li>
+                <li>Design</li>
+                <li>Management</li>
+                <li>Marketing</li>
+                <li>Scientific pop</li>
+            </ul>
+            <div class="nav__buttons">
+            <button class="nav__search-btn"><i class="fas fa-search"></i></button>
+            <button class="nav__my-account-btn"><i class="far fa-user"></i></button>
+        </div>
+        </div>
+    </nav>
+
+    <div class="overlay hidden"></div>
+    <!--!-->
+    <script src="https://kit.fontawesome.com/3dea964375.js" crossorigin="anonymous"></script>
+    <script src="/src/header.script.js"></script>
+</body>
+</html>
