@@ -23,11 +23,11 @@ header .header__content button {
   color: white;
 }
 
-header .header__content .block-for-popup .header__open-popup-btn {
+header .header__content .header__open-popup-btn {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-header .header__content .block-for-popup .header__open-popup-btn i {
+header .header__content .header__open-popup-btn i {
   font-size: 14px;
   margin: 0 5px;
 }
@@ -45,49 +45,50 @@ header .header__content .header__become-author-btn:hover {
   transition: ease-in 0.3s;
 }
 
-header .header__services-popup {
+header .header__wrapper-popup {
   display: none;
   position: absolute;
   width: 300px;
   height: auto;
-  margin-left: -80px;
-  margin-top: 12px;
+  margin-top: 40px;
   background-color: white;
   z-index: 6;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-header .header__services-popup .popup__header {
+header .header__wrapper-popup .popup__header {
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-header .header__services-popup .popup__header p {
+header .header__wrapper-popup .popup__header p {
   padding: 0 20px;
+  cursor: default;
 }
 
-header .header__services-popup .popup__services {
+header .header__wrapper-popup .popup__services {
   padding: 12px 0;
 }
 
-header .header__services-popup .popup__services .service {
+header .header__wrapper-popup .popup__services .service {
   padding: 3px 0;
   height: 63px;
+  cursor: pointer;
 }
 
-header .header__services-popup .popup__services .service:hover {
+header .header__wrapper-popup .popup__services .service:hover {
   background-color: #ebebeb;
 }
 
-header .header__services-popup .popup__services .service h2 {
+header .header__wrapper-popup .popup__services .service h2 {
   font-family: "PyperFonts";
   font: "Rubik-VariableFont";
   font-weight: normal;
   padding: 0 20px;
 }
 
-header .header__services-popup .popup__services .service p {
+header .header__wrapper-popup .popup__services .service p {
   padding: 0 20px;
   font-size: 13px;
   letter-spacing: 0.5px;

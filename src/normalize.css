@@ -103,7 +103,7 @@ ul {
   margin: 0;
 }
 a {
-  color: white;
+  color: inherit;
   text-decoration: none;
 }
 select:focus {

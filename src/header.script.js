@@ -1,6 +1,6 @@
 const headerPopupBtn = document.querySelector('.header__open-popup-btn');
 
-const headerPopupEl = document.querySelector('.header__content .header__services-popup');
+const headerPopupEl = document.querySelector('.header__content .header__wrapper-popup');
 
 const overlay = document.querySelector('.overlay');
 console.log(overlay);
