@@ -120,3 +120,12 @@ select:focus {
 .hidden {
   display: none;
 }
+.active-navigation {
+  border-bottom: 4px solid black;
+  border-image: linear-gradient(to right top, #ca007d, #008ddf, #7734bc);
+  border-image-slice: 1;
+}
+button {
+  font-family: "PyperFonts";
+  font: "Rubik-VariableFont";
+}
