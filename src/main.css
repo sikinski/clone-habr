@@ -13,14 +13,21 @@ main {
 }
 
 main .main__posts-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 800px;
   height: auto;
-  background-color: white;
 }
 
 main .main__posts-section .main__header-streams {
   padding: 15px;
-  height: 130px;
+  height: 160px;
+  background-color: white;
 }
 
 main .main__posts-section .main__header-streams h3 {
@@ -75,7 +82,110 @@ main .main__posts-section .main__header-streams .main__search-filter .main__copy
 }
 
 main .main__posts-section article {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
   padding: 15px;
+  padding-bottom: 0;
+  margin-top: 20px;
+}
+
+main .main__posts-section article .article__author-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 30px;
+}
+
+main .main__posts-section article .article__author-section .author__user-avatar {
+  width: 25px;
+  height: 25px;
+}
+
+main .main__posts-section article .article__author-section .author__user-name {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+main .main__posts-section article .article__author-section .author__date-publication {
+  font-size: 15px;
+  opacity: 0.7;
+  padding: 0 5px;
+  cursor: default;
+}
+
+main .main__posts-section article .article__header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0;
+}
+
+main .main__posts-section article .article__header-section .header-section__name-article {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .main__posts-section article .article__header-section .header-section__categories .header-section__category {
+  font-size: 15px;
+}
+
+main .main__posts-section article .article__header-section .header-section__type-article {
+  width: 100px;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+  border: 1px solid #008ddf;
+  -o-border-image: linear-gradient(to right top, #ca007d, #008ddf, #7734bc);
+     border-image: -webkit-gradient(linear, left bottom, right top, from(#ca007d), color-stop(#008ddf), to(#7734bc));
+     border-image: linear-gradient(to right top, #ca007d, #008ddf, #7734bc);
+  border-image-slice: 1;
+  color: #008ddf;
+  cursor: default;
+}
+
+main .main__posts-section article .article__description-section .description__picture {
+  width: 100%;
+  height: auto;
+}
+
+main .main__posts-section article .article__description-section .description__text {
+  padding: 20px 0;
+}
+
+main .main__posts-section article .article__description-section .description__read-more-btn {
+  border: 1px solid #008ddf;
+  color: #008ddf;
+  padding: 5px;
+}
+
+main .main__posts-section article .article__feedback-section .feedback__feedback-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  padding: 15px 0;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #008ddf;
+}
+
+main .main__posts-section article .article__feedback-section .feedback__feedback-btns button {
+  color: #008ddf;
+}
+
+main .main__posts-section article .article__feedback-section .feedback__feedback-btns .fas,
+main .main__posts-section article .article__feedback-section .feedback__feedback-btns .far {
+  margin-right: 8px;
+  opacity: 0.3;
 }
 
 main aside {
