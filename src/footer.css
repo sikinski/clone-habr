@@ -1,0 +1,124 @@
+footer {
+  background-color: #2b3135;
+  margin-top: 50px;
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+
+footer .footer__footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  width: 1150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+footer .footer__footer-content h4 {
+  display: block;
+  width: 100%;
+  padding: 13px 0;
+  font-size: 16px;
+  cursor: default;
+  border-bottom: 1px solid #666666;
+}
+
+footer .footer__footer-content ul li {
+  padding: 5px 0;
+}
+
+footer .footer__footer-content ul li:hover {
+  color: #008ddf;
+}
+
+footer .footer__footer-content ul li a {
+  font-size: 13px;
+}
+
+footer .footer__footer-content .footer__login-section {
+  width: 22%;
+}
+
+footer .footer__footer-content .footer__sections-section {
+  width: 22%;
+}
+
+footer .footer__footer-content .footer__information-section {
+  width: 22%;
+}
+
+footer .footer__footer-content .footer__services-section {
+  width: 22%;
+}
+
+footer .footer-container {
+  width: 100%;
+  background-color: #1d2023;
+  margin-top: 20px;
+}
+
+footer .footer-container .footer-container-content {
+  width: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+footer .footer-container .footer-container-content .footer__container-section {
+  width: auto;
+}
+
+footer .footer-container .footer-container-content .footer__container-section p {
+  color: white;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+footer .footer-container .footer-container-content .footer__container-section .footer__container-link {
+  color: #30aedc;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+footer .footer-container .footer-container-content .buttons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 10%;
+}
+
+footer .footer-container .footer-container-content .buttons-block button {
+  width: 20px;
+  height: 20px;
+}
+
+footer .footer-container .footer-container-content .buttons-block #facebook-btn {
+  background: url(/src/img/facebook-logo.png);
+  background-size: contain;
+}
+
+footer .footer-container .footer-container-content .buttons-block #twitter-btn {
+  background: url(/src/img/twitter-logo.png);
+  background-size: contain;
+}
+
+footer .footer-container .footer-container-content .buttons-block #telegram-btn {
+  background: url(/src/img/telegram-logo.png);
+  background-size: contain;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,4 +1,6 @@
 const headerPopupBtn = document.querySelector('.header__open-popup-btn');
+const headerPopupBtnIcon = document.querySelector('.header__open-popup-btn i');
+
 
 const headerPopupEl = document.querySelector('.header__content .header__wrapper-popup');
 
@@ -6,11 +8,17 @@ const overlay = document.querySelector('.overlay');
 console.log(overlay);
 
 console.log(headerPopupEl);
-/* почини это пж )) */
-headerPopupBtn.addEventListener('click', function () {
-    headerPopupEl.style.display = (headerPopupEl.style.display == 'none') ? 'block' : 'none';
-    // headerPopupBtn.classList.contains = (headerPopupBtn.classList('fa-chevron-down')) ? 'fa-chevron-up' : ' fa-chevron-down';
 
+headerPopupBtn.addEventListener('click', function () {
+    headerPopupEl.style.display = (headerPopupEl.style.display !== 'block') ? 'block' : 'none';
+
+    if(headerPopupBtnIcon.classList.contains('fa-chevron-down')) {
+        headerPopupBtnIcon.classList.remove('fa-chevron-down');
+        headerPopupBtnIcon.classList.add('fa-chevron-up');
+    } else if(headerPopupBtnIcon.classList.contains('fa-chevron-up')) {
+        headerPopupBtnIcon.classList.remove('fa-chevron-up');
+        headerPopupBtnIcon.classList.add('fa-chevron-down');
+    }
     // if (headerPopupEl.classList.contains("header__services-popup")) {
     //     overlay.classList.remove("hidden");
     //   }

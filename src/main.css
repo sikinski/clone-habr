@@ -188,6 +188,61 @@ main .main__posts-section article .article__feedback-section .feedback__feedback
   opacity: 0.3;
 }
 
+main .main__pagination-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 55px;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+main .main__pagination-block .pag-here-block a {
+  opacity: 0.7;
+  cursor: default;
+}
+
+main .main__pagination-block .pag-here-block a .fa-chevron-left {
+  margin-right: 8px;
+}
+
+main .main__pagination-block .pag-pages-block {
+  max-width: 50%;
+}
+
+main .main__pagination-block .pag-pages-block ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+main .main__pagination-block .pag-pages-block ul li {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+main .main__pagination-block .pag-pages-block ul li:hover {
+  color: #008ddf;
+}
+
+main .main__pagination-block .pag-pages-block ul .active-pag {
+  opacity: 0.5;
+}
+
+main .main__pagination-block .pag-there-block a .fa-chevron-right {
+  margin-left: 8px;
+}
+
+main .main__pagination-block .pag-there-block a:hover {
+  color: #008ddf;
+}
+
 main aside {
   min-width: 29%;
   background-color: white;
