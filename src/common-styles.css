@@ -84,7 +84,10 @@ select:focus {
 .hidden {
   display: none;
 }
-.active-navigation {
+.active-navigation-light {
+  border-bottom: 4px solid black;
+}
+.active-navigation-dark {
   border-bottom: 4px solid black;
   border-image: linear-gradient(to right top, #ca007d, #008ddf, #7734bc);
   border-image-slice: 1;

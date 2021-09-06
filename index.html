@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <div class="header__content">
-          <a href="#"><img src="/src/img/logo.gif" alt="" /></a>
+          <a href="#"><img src="/src/img/habr-logo-light.png" alt="" /></a>
 
             <button class="header__open-popup-btn">
               <i class="fas fa-chevron-down"></i>
@@ -61,6 +61,7 @@
                 <li><a href="#">PopSci</a></li>
             </ul>
             <div class="nav__buttons">
+              <button class="toggle-themes"><i class="fas fa-toggle-off"></i></button>
             <button class="nav__search-btn"><i class="fas fa-search"></i></button>
             <button class="nav__my-account-btn"><i class="far fa-user"></i></button>
         </div>
@@ -72,7 +73,7 @@
               <div class="main__header-streams">
                 <h3>All streams</h3>
                   <ul class="navigation-content">
-                    <li><a href="#" class="articles-link active-navigation">Articles</a></li>
+                    <li><a href="#" class="articles-link active-navigation-light">Articles</a></li>
                     <li><a href="#" class="news-link">News</a></li>
                     <li><a href="#" class="hubs-link">Hubs</a></li>
                     <li><a href="#" class="authors-link">Authors</a></li>
@@ -174,8 +175,10 @@
         </div>
 
         <aside class="aside">
-          <h4>Top blogs</h4>
+          <div class="aside__block">
           <div class="aside__top-blogs-container">
+          <h4>Top blogs</h4>
+
             <div class="top-blogs-block">
               <img src="/src/img/ruvds-logo.png" class="top-blog-logo" />
               <p class="top-blog-name">RUVDS.com</p>
@@ -207,6 +210,48 @@
               <p class="top-blog-rating">564.57</p>
             </div>
             <a href="#">All companies</a>
+          </div>
+          </div>
+          <div class="aside__block">
+            <div class="aside__news-container">
+            <h4>Most reading</h4>
+
+              <div class="aside-new">
+                <a href="#">Главной угрозой для общества стали компании, которые «защищают безопасность»</a>
+                <div class="new-buttons">
+                <button class="new-views"><i class="far fa-eye"></i>15K</button>
+                <button class="new-comments-btn"><i class="fas fa-comment"></i>51</button>
+              </div>
+            </div>
+              <div class="aside-new">
+                <a href="#">Легенды и мифы процессора Эльбрус в примерах</a>
+                <div class="new-buttons">
+                <button class="new-views"><i class="far fa-eye"></i>14K</button>
+                <button class="new-comments-btn"><i class="fas fa-comment"></i>66</button>
+              </div>
+            </div>
+              <div class="aside-new">
+                <a href="#">Индия сфотографировала лунный модуль «Аполлона». Снова</a>
+                <div class="new-buttons">
+                <button class="new-views"><i class="far fa-eye"></i>7.8K</button>
+                <button class="new-comments-btn"><i class="fas fa-comment"></i>25</button>
+              </div>
+            </div>
+              <div class="aside-new">
+                <a href="#">Суд запретил «Яндексу» и Google показывать в поисковой выдаче словосочетание «умное голосование»</a>
+                <div class="new-buttons">
+                <button class="new-views"><i class="far fa-eye"></i>25K</button>
+                <button class="new-comments-btn"><i class="fas fa-comment"></i>145</button>
+              </div>
+            </div>
+              <div class="aside-new">
+                <a href="#">Как я получил 4 оффера в FAANG в Европе или из Воронежа в Лондон</a>
+                <div class="new-buttons">
+                <button class="new-views"><i class="far fa-eye"></i>2.1K</button>
+                <button class="new-comments-btn"><i class="fas fa-comment"></i>3</button>
+              </div>
+              </div>
+            </div>
           </div>
         </aside>
     </main>

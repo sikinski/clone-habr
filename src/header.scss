@@ -1,5 +1,5 @@
 $fullsz: 100%;
-$mainCol: #1a1b1b;
+$mainCol: #2b3135;
 $textCol: #4c7bbf;
 $greenCol: #62b13d;
 $lineZPCol: #6b57f5;
@@ -20,6 +20,8 @@ header {
     a {
       img {
         height: 100%;
+        width: 60px;
+        margin: 0 5px;
       }
     }
     & button {

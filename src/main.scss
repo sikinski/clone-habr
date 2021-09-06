@@ -58,6 +58,9 @@ main {
           padding: 0 10px;
           opacity: 0.5;
           font-size: 18px;
+          &:hover {
+            color: #34588a;
+          }
         }
       }
     }
@@ -210,44 +213,87 @@ main {
   }
 
   aside {
-    min-width: 29%;
-    background-color: white;
-    padding: 15px;
-    h4 {
-      font-family: "PyperFonts";
-      font: "Arial";
-      text-transform: uppercase;
-      font-weight: bold;
-      opacity: 0.6;
-      font-size: smaller;
-      padding: 10px 0;
-    }
-    .aside__top-blogs-container {
-      border-top: 1px solid rgba(0, 0, 0, 0.3);
-      padding: 20px 0;
-      .top-blogs-block {
-        display: flex;
+    width: 29%;
+    .aside__block {
+      h4 {
+        font-family: "PyperFonts";
+        font: "Arial";
+        text-transform: uppercase;
+        font-weight: bold;
+        opacity: 0.6;
+        font-size: smaller;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         margin-bottom: 20px;
-        justify-content: space-between;
-        cursor: pointer;
-        img {
-          position: absolute;
-          width: 40px;
-          height: 40px;
+      }
+      .aside__top-blogs-container {
+        background-color: white;
+        padding: 20px 15px;
+
+        // padding: 20px 0;
+        .top-blogs-block {
+          display: flex;
+          margin-bottom: 20px;
+          justify-content: space-between;
+          cursor: pointer;
+          img {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+          }
+          .top-blog-name {
+            margin-left: 55px;
+            padding: 8px 0;
+            width: 70%;
+          }
+          .top-blog-rating {
+            padding: 7px 0;
+            color: #ca007d;
+          }
         }
-        .top-blog-name {
-          margin-left: 55px;
-          padding: 8px 0;
-          width: 70%;
-        }
-        .top-blog-rating {
-          padding: 7px 0;
-          color: #ca007d;
+        a {
+          font-size: 15px;
+          color: #008ddf;
         }
       }
-      a {
-        font-size: 15px;
-        color: #008ddf;
+      .aside__news-container {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 15px;
+
+        .aside-new {
+          position: relative;
+          width: 100%;
+          height: auto;
+          margin: 3px 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+          a {
+            font-weight: bold;
+            font-size: 13px;
+            opacity: 0.8;
+            &:hover {
+              opacity: 1;
+            }
+          }
+          .new-buttons {
+            padding: 7px 0;
+            .new-views {
+              cursor: default;
+              .far {
+                margin-right: 5px;
+                color: darken(#bdcdd6, 15%);
+              }
+            }
+            .new-comments-btn {
+              .fas {
+                margin-right: 5px;
+                color: darken(#bdcdd6, 15%);
+              }
+            }
+          }
+        }
       }
     }
   }

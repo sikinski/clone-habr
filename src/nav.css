@@ -30,7 +30,7 @@ nav .nav__content ul li:hover {
 
 nav .nav__content .nav__buttons {
   float: right;
-  margin-top: -28px;
+  margin-top: -24px;
 }
 
 nav .nav__content .nav__buttons button {
@@ -40,4 +40,7 @@ nav .nav__content .nav__buttons button {
 }
 nav .nav__content .nav__buttons button:hover {
   color: #34588a;
+}
+nav .nav__content .nav__buttons .fa-search {
+  font-size: smaller;
 }
