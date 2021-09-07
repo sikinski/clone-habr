@@ -2,6 +2,8 @@ $customBlue: #008ddf;
 $customPink: #ca007d;
 $customViolet: #7734bc;
 
+$blueHover: #34588a;
+
 main {
   display: flex;
   position: relative;
@@ -17,7 +19,7 @@ main {
     height: auto;
     .main__header-streams {
       padding: 15px;
-      height: 160px;
+      height: auto;
       background-color: white;
       h3 {
         margin-bottom: 22px;
@@ -30,6 +32,7 @@ main {
           height: 60px;
           margin-right: 15px;
           padding-bottom: 25px;
+
           a {
             cursor: pointer;
             opacity: 0.6;
@@ -38,6 +41,12 @@ main {
             text-transform: uppercase;
             font-weight: bold;
             font-size: 14px;
+            &:hover {
+              border-bottom: 4px solid $customBlue;
+            }
+            &:focus {
+              border-bottom: 4px solid $blueHover;
+            }
           }
         }
       }
@@ -52,6 +61,9 @@ main {
           .fas {
             margin-left: 8px;
           }
+          &:hover {
+            color: $blueHover;
+          }
         }
         .main__copy-filter-btn {
           float: right;
@@ -61,6 +73,42 @@ main {
           &:hover {
             color: #34588a;
           }
+        }
+      }
+      .main__search-filter-block {
+        height: auto;
+        div {
+          margin: 20px 0;
+          p {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px 0;
+          }
+          button {
+            height: 30px;
+            padding: 0 8px;
+            border: 1px solid #548eaa;
+            border-radius: 3px;
+            color: $customBlue;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            &:hover {
+              background-color: #548eaa;
+              color: white;
+            }
+          }
+          .filter-search-active {
+            background-color: #548eaa;
+            color: white;
+          }
+        }
+        .filter-apply {
+          background-color: #7aa600;
+          color: white;
+          padding: 7px 15px;
+          border-radius: 3px;
         }
       }
     }

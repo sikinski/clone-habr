@@ -26,7 +26,7 @@ main .main__posts-section {
 
 main .main__posts-section .main__header-streams {
   padding: 15px;
-  height: 160px;
+  height: auto;
   background-color: white;
 }
 
@@ -58,6 +58,14 @@ main .main__posts-section .main__header-streams .navigation-content li a {
   font-size: 14px;
 }
 
+main .main__posts-section .main__header-streams .navigation-content li a:hover {
+  border-bottom: 4px solid #008ddf;
+}
+
+main .main__posts-section .main__header-streams .navigation-content li a:focus {
+  border-bottom: 4px solid #34588a;
+}
+
 main .main__posts-section .main__header-streams .main__search-filter {
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
@@ -74,6 +82,10 @@ main .main__posts-section .main__header-streams .main__search-filter button .fas
   margin-left: 8px;
 }
 
+main .main__posts-section .main__header-streams .main__search-filter button:hover {
+  color: #34588a;
+}
+
 main .main__posts-section .main__header-streams .main__search-filter .main__copy-filter-btn {
   float: right;
   padding: 0 10px;
@@ -83,6 +95,49 @@ main .main__posts-section .main__header-streams .main__search-filter .main__copy
 
 main .main__posts-section .main__header-streams .main__search-filter .main__copy-filter-btn:hover {
   color: #34588a;
+}
+
+main .main__posts-section .main__header-streams .main__search-filter-block {
+  height: auto;
+}
+
+main .main__posts-section .main__header-streams .main__search-filter-block div {
+  margin: 20px 0;
+}
+
+main .main__posts-section .main__header-streams .main__search-filter-block div p {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+main .main__posts-section .main__header-streams .main__search-filter-block div button {
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid #548eaa;
+  border-radius: 3px;
+  color: #008ddf;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+main .main__posts-section .main__header-streams .main__search-filter-block div button:hover {
+  background-color: #548eaa;
+  color: white;
+}
+
+main .main__posts-section .main__header-streams .main__search-filter-block div .filter-search-active {
+  background-color: #548eaa;
+  color: white;
+}
+
+main .main__posts-section .main__header-streams .main__search-filter-block .filter-apply {
+  background-color: #7aa600;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 3px;
 }
 
 main .main__posts-section article {
