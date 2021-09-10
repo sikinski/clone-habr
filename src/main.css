@@ -3,7 +3,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 1150px;
+  max-width: 1150px;
   height: auto;
   margin: 0 auto;
   margin-top: 15px;
@@ -46,6 +46,18 @@ main .main__posts-section .main__header-streams .navigation-content li {
   height: 60px;
   margin-right: 15px;
   padding-bottom: 25px;
+}
+
+main .main__posts-section .main__header-streams .navigation-content li .active-navigation-light {
+  border-bottom: 4px solid #008ddf;
+}
+
+main .main__posts-section .main__header-streams .navigation-content li .active-navigation-dark {
+  border-bottom: 4px solid black;
+  -o-border-image: linear-gradient(to right top, #ca007d, #008ddf, #7734bc);
+     border-image: -webkit-gradient(linear, left bottom, right top, from(#ca007d), color-stop(#008ddf), to(#7734bc));
+     border-image: linear-gradient(to right top, #ca007d, #008ddf, #7734bc);
+  border-image-slice: 1;
 }
 
 main .main__posts-section .main__header-streams .navigation-content li a {

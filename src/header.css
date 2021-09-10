@@ -15,10 +15,22 @@ header .header__content {
   padding-bottom: 8px;
 }
 
-header .header__content a img {
+header .header__content .logo-habr-light {
+  background: url(/src/img/habr-logo-light.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100%;
-  width: 60px;
-  margin: 0 5px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+header .header__content .logo-habr-dark {
+  background: url(/src/img/habr-logo-dark.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80%;
+  width: 80px;
+  margin-top: 5px;
 }
 
 header .header__content button {

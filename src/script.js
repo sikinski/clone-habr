@@ -41,20 +41,13 @@ openFilterBtn.addEventListener('click', function() {
 
 // toggle themes
 const toggleThemesBtn = document.querySelector('nav .nav__content .nav__buttons .toggle-themes-btn i');
-let habrLogo = document.getElementById('logo-habr');
-const DARK_LOGO = '/src/img/habr-logo-dark.gif';
-const LIGHT_LOGO = '/src/img/habr-logo-light.png';
-
+const logoHabr = document.querySelector('header .header__content .logo-habr-light');
 
 toggleThemesBtn.addEventListener('click', function() {
     changeIcon(toggleThemesBtn, 'fa-toggle-off', 'fa-toggle-on');
     // logo
-    habrLogo.src = habrLogo.src == LIGHT_LOGO ? DARK_LOGO : LIGHT_LOGO;
-
-    // if(habrLogo.src=='src/img/habr-logo-light.png') {
-    //     habrLogo.src=='src/img/habr-logo-dark.gif';
-    // } else {
-    //     habrLogo.src=='src/img/habr-logo-light.png';
-    // }
+    logoHabr.classList.toggle('logo-habr-dark');
+    // main navigation
+    document.querySelector('main .main__posts-section .main__header-streams .navigation-content li .active-navigation-light').classList.toggle('active-navigation-dark');
 })
 // habrLogo.src = (habrLogo.src == 'src/img/habr-logo-light.png') ? 'src/img/habr-logo-dark.gif' : 'src/img/habr-logo-light.png';

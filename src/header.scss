@@ -17,12 +17,22 @@ header {
     margin: 0 auto;
     padding-top: 8px;
     padding-bottom: 8px;
-    a {
-      img {
-        height: 100%;
-        width: 60px;
-        margin: 0 5px;
-      }
+    .logo-habr-light {
+      background: url(/src/img/habr-logo-light.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 80px;
+      margin-left: 10px;
+    }
+    .logo-habr-dark {
+      background: url(/src/img/habr-logo-dark.gif);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 80%;
+      width: 80px;
+      // margin: 0 5px;
+      margin-top: 5px;
     }
     & button {
       color: white;

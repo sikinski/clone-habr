@@ -7,7 +7,7 @@ $blueHover: #34588a;
 main {
   display: flex;
   position: relative;
-  width: 1150px;
+  max-width: 1150px;
   height: auto;
   margin: 0 auto;
   margin-top: 15px;
@@ -32,6 +32,20 @@ main {
           height: 60px;
           margin-right: 15px;
           padding-bottom: 25px;
+          .active-navigation-light {
+            border-bottom: 4px solid #008ddf;
+          }
+
+          .active-navigation-dark {
+            border-bottom: 4px solid black;
+            border-image: linear-gradient(
+              to right top,
+              #ca007d,
+              #008ddf,
+              #7734bc
+            );
+            border-image-slice: 1;
+          }
 
           a {
             cursor: pointer;
@@ -50,6 +64,7 @@ main {
           }
         }
       }
+
       .main__search-filter {
         width: 100%;
         border-top: 1px solid rgba(0, 0, 0, 0.3);

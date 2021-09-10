@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="/src/nav.css">
     <link rel="stylesheet" href="/src/main.css">
     <link rel="stylesheet" href="/src/footer.css">
+    <link rel="stylesheet" href="/src/adaptive.css">
 
     <title>All posts in a row / Habr</title>
 </head>
 <body>
     <header class="header">
         <div class="header__content">
-          <a href="#"><img id="logo-habr" src="/src/img/habr-logo-light.png" alt="" /></a>
+          <div class="logo-habr-light"></div>
 
             <button class="header__open-popup-btn">
               <i class="fas fa-chevron-down"></i>
@@ -61,6 +62,7 @@
                 <li><a href="#">PopSci</a></li>
             </ul>
             <div class="nav__buttons">
+              <button class="nav__menu-btn hidden"><i class="fas fa-bars"></i></button>
             <button class="toggle-themes-btn"><i class="fas fa-toggle-off"></i></button>
             <input class="nav__search-input hidden" type="text" placeholder="type here to search"> 
             <button class="nav__search-btn"><i class="fas fa-search"></i></button>

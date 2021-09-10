@@ -1,7 +1,7 @@
 footer {
   background-color: #2b3135;
   margin-top: 50px;
-  padding: 20px 0;
+  padding-top: 20px;
   padding-bottom: 0;
 }
 
@@ -11,10 +11,10 @@ footer .footer__footer-content {
   display: flex;
   position: relative;
   margin: 0 auto;
-  width: 1150px;
+  max-width: 1150px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   color: white;
 }
 
@@ -62,16 +62,16 @@ footer .footer-container {
 }
 
 footer .footer-container .footer-container-content {
-  width: 1150px;
+  max-width: 1150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 15px 0;
   margin: 0 auto;
 }
@@ -80,13 +80,21 @@ footer .footer-container .footer-container-content .footer__container-section {
   width: auto;
 }
 
-footer .footer-container .footer-container-content .footer__container-section p {
+footer
+  .footer-container
+  .footer-container-content
+  .footer__container-section
+  p {
   color: white;
   opacity: 0.6;
   font-size: 15px;
 }
 
-footer .footer-container .footer-container-content .footer__container-section .footer__container-link {
+footer
+  .footer-container
+  .footer-container-content
+  .footer__container-section
+  .footer__container-link {
   color: #30aedc;
   font-weight: bold;
   font-size: 15px;
@@ -97,8 +105,8 @@ footer .footer-container .footer-container-content .buttons-block {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 10%;
 }
 
@@ -107,18 +115,29 @@ footer .footer-container .footer-container-content .buttons-block button {
   height: 20px;
 }
 
-footer .footer-container .footer-container-content .buttons-block #facebook-btn {
+footer
+  .footer-container
+  .footer-container-content
+  .buttons-block
+  #facebook-btn {
   background: url(/src/img/facebook-logo.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 footer .footer-container .footer-container-content .buttons-block #twitter-btn {
   background: url(/src/img/twitter-logo.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
-footer .footer-container .footer-container-content .buttons-block #telegram-btn {
+footer
+  .footer-container
+  .footer-container-content
+  .buttons-block
+  #telegram-btn {
   background: url(/src/img/telegram-logo.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=footer.css.map */
