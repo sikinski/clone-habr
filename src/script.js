@@ -39,15 +39,14 @@ openFilterBtn.addEventListener('click', function() {
 });
 
 
-// toggle themes
-const toggleThemesBtn = document.querySelector('nav .nav__content .nav__buttons .toggle-themes-btn i');
-const logoHabr = document.querySelector('header .header__content .logo-habr-light');
+// // toggle themes
+// const toggleThemesBtn = document.querySelector('nav .nav__content .nav__buttons .toggle-themes-btn i');
+// const logoHabr = document.querySelector('header .header__content .logo-habr-light');
 
-toggleThemesBtn.addEventListener('click', function() {
-    changeIcon(toggleThemesBtn, 'fa-toggle-off', 'fa-toggle-on');
-    // logo
-    logoHabr.classList.toggle('logo-habr-dark');
-    // main navigation
-    document.querySelector('main .main__posts-section .main__header-streams .navigation-content li .active-navigation-light').classList.toggle('active-navigation-dark');
-})
-// habrLogo.src = (habrLogo.src == 'src/img/habr-logo-light.png') ? 'src/img/habr-logo-dark.gif' : 'src/img/habr-logo-light.png';
+// toggleThemesBtn.addEventListener('click', function() {
+//     changeIcon(toggleThemesBtn, 'fa-toggle-off', 'fa-toggle-on');
+//     // logo
+//     logoHabr.classList.toggle('logo-habr-dark');
+//     // main navigation
+//     document.querySelector('main .main__posts-section .main__header-streams .navigation-content li .active-navigation-light').classList.toggle('active-navigation-dark');
+// });
